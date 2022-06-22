@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>lrp_file</class>
+ <widget class="QDialog" name="lrp_file">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>668</width>
+    <height>378</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>lrp file</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="9" column="1" colspan="2">
+        <widget class="QLineEdit" name="effective_radiated_power"/>
+       </item>
+       <item row="1" column="1" colspan="2">
+        <widget class="QLineEdit" name="dielectric_const"/>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="FoT_label">
+         <property name="text">
+          <string>Fraction of time</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1" colspan="2">
+        <widget class="QLineEdit" name="fraction_of_situations"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="file_name">
+         <property name="styleSheet">
+          <string notr="true">combobox-popup: 0;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="Earth_D_C_label">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Earth Dielectric Constant&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="FoS_label">
+         <property name="text">
+          <string>Fraction of situations</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="ERP_label">
+         <property name="text">
+          <string>Effective Radiated Power (ERP) in Watts</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="refresh_file">
+         <property name="text">
+          <string>Refresh</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="frequency_label">
+         <property name="text">
+          <string>Frequency in MHz (20 MHz to 20 GHz)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="Climate_label">
+         <property name="text">
+          <string>Radio Climate</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1" colspan="2">
+        <widget class="QLineEdit" name="atmospheric_bending_const"/>
+       </item>
+       <item row="4" column="1" colspan="2">
+        <widget class="QLineEdit" name="frequency"/>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="Polarization_label">
+         <property name="text">
+          <string>Polarization</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1" colspan="2">
+        <widget class="QComboBox" name="polarization">
+         <item>
+          <property name="text">
+           <string>Horizontal</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Vertical</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="EC_label">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Earth Conductivity&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1" colspan="2">
+        <widget class="QComboBox" name="radio_climate">
+         <item>
+          <property name="text">
+           <string>Equatorial (Congo)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Continental Subtropical (Sudan)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Maritime Subtropical</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Desert (Sahara)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Continental Temperate</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Maritime Temperate, over land</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Maritime Temperate, over sea</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="ABC_label">
+         <property name="text">
+          <string>Atmospheric Bending Constant</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1" colspan="2">
+        <widget class="QLineEdit" name="fraction_of_time"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="name_label">
+         <property name="text">
+          <string>File name</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1" colspan="2">
+        <widget class="QLineEdit" name="conductivity"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="save_file_lrp">
+         <property name="text">
+          <string>Save</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="save_as_file_lrp">
+         <property name="text">
+          <string>Save as</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="delete_file_lrp">
+         <property name="text">
+          <string>Delete </string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

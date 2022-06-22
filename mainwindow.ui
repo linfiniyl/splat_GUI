@@ -1,0 +1,1599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1813</width>
+    <height>648</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SPLAT! Version 1.4.2</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QLabel" name="Modes_label">
+          <property name="text">
+           <string>Operating modes</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="1" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Minimum</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Create">
+              <property name="text">
+               <string>Create</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="refresh_trrc">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="acceptDrops">
+               <bool>true</bool>
+              </property>
+              <property name="text">
+               <string>Refresh</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="0">
+           <widget class="QTabWidget" name="tabWidget">
+            <property name="tabPosition">
+             <enum>QTabWidget::West</enum>
+            </property>
+            <property name="tabShape">
+             <enum>QTabWidget::Rounded</enum>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <property name="elideMode">
+             <enum>Qt::ElideNone</enum>
+            </property>
+            <property name="tabBarAutoHide">
+             <bool>false</bool>
+            </property>
+            <widget class="QWidget" name="basics">
+             <attribute name="title">
+              <string>Basics</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_11">
+              <item>
+               <widget class="QScrollArea" name="scrollArea_2">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>525</width>
+                   <height>723</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_10">
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout_5" columnstretch="0,0,0,0">
+                    <property name="sizeConstraint">
+                     <enum>QLayout::SetDefaultConstraint</enum>
+                    </property>
+                    <property name="verticalSpacing">
+                     <number>6</number>
+                    </property>
+                    <item row="23" column="3">
+                     <widget class="QPushButton" name="ch_cart_b_file_4">
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="16" column="0">
+                     <widget class="QLabel" name="city5_l">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="text">
+                       <string>city file №5</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="tr2_l">
+                      <property name="text">
+                       <string>transmitter №2</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="15" column="3">
+                     <widget class="QPushButton" name="ch_city_file_4">
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="14" column="0">
+                     <widget class="QLabel" name="city3_l">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="text">
+                       <string>city file №3</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="12" column="3">
+                     <widget class="QPushButton" name="ch_city_file_1">
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="17" column="3">
+                     <widget class="QComboBox" name="cart_bound_file_number">
+                      <item>
+                       <property name="text">
+                        <string>0</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>1</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>2</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>3</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>4</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>5</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="15" column="0">
+                     <widget class="QLabel" name="city4_l">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="text">
+                       <string>city file №4</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="tr1_l">
+                      <property name="text">
+                       <string>transmitter №1</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="3">
+                     <widget class="QComboBox" name="receiver_number">
+                      <item>
+                       <property name="text">
+                        <string>0</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>1</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="16" column="1" colspan="2">
+                     <widget class="QLineEdit" name="city_file_5">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="8" column="3">
+                     <widget class="QLabel" name="log_res">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="tabletTracking">
+                       <bool>false</bool>
+                      </property>
+                      <property name="focusPolicy">
+                       <enum>Qt::NoFocus</enum>
+                      </property>
+                      <property name="acceptDrops">
+                       <bool>false</bool>
+                      </property>
+                      <property name="layoutDirection">
+                       <enum>Qt::LeftToRight</enum>
+                      </property>
+                      <property name="autoFillBackground">
+                       <bool>false</bool>
+                      </property>
+                      <property name="text">
+                       <string>.txt</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="0" colspan="3">
+                     <widget class="QLabel" name="label_27">
+                      <property name="text">
+                       <string>Number of reciever site</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="tr3_l">
+                      <property name="text">
+                       <string>transmitter №3</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="0">
+                     <widget class="QLabel" name="rcv_l">
+                      <property name="text">
+                       <string>receiver</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="8" column="0">
+                     <widget class="QCheckBox" name="save_log">
+                      <property name="tabletTracking">
+                       <bool>false</bool>
+                      </property>
+                      <property name="focusPolicy">
+                       <enum>Qt::NoFocus</enum>
+                      </property>
+                      <property name="acceptDrops">
+                       <bool>false</bool>
+                      </property>
+                      <property name="layoutDirection">
+                       <enum>Qt::LeftToRight</enum>
+                      </property>
+                      <property name="autoFillBackground">
+                       <bool>false</bool>
+                      </property>
+                      <property name="text">
+                       <string>save log</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="12" column="0">
+                     <widget class="QLabel" name="city1_l">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="text">
+                       <string>city file №1</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="18" column="3">
+                     <widget class="QPushButton" name="ch_cart_b_file_1">
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="24" column="1" colspan="2">
+                     <widget class="QLineEdit" name="cart_b_file_5">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="11" column="0" colspan="3">
+                     <widget class="QLabel" name="label_29">
+                      <property name="text">
+                       <string>number of city/site file(s)</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="16" column="3">
+                     <widget class="QPushButton" name="ch_city_file_5">
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0" colspan="3">
+                     <widget class="QLabel" name="label_22">
+                      <property name="text">
+                       <string>Nubmber of transmitters site</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="8" column="1" colspan="2">
+                     <widget class="QLineEdit" name="save_log_text">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="0">
+                     <widget class="QLabel" name="tr4_l">
+                      <property name="text">
+                       <string>transmitter №4</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="18" column="0">
+                     <widget class="QLabel" name="cart_b_l1">
+                      <property name="enabled">
+                       <bool>true</bool>
+                      </property>
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="text">
+                       <string>cart. b. file №1</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="19" column="1" rowspan="2" colspan="2">
+                     <widget class="QLineEdit" name="cart_b_file_2">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="1" colspan="3">
+                     <widget class="QComboBox" name="receiver"/>
+                    </item>
+                    <item row="17" column="0" colspan="3">
+                     <widget class="QLabel" name="label_35">
+                      <property name="text">
+                       <string>number of cartographic boundary file(s)</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="3">
+                     <widget class="QComboBox" name="transmitter_number">
+                      <item>
+                       <property name="text">
+                        <string>1</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>2</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>3</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>4</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="23" column="1" colspan="2">
+                     <widget class="QLineEdit" name="cart_b_file_4">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="1" colspan="3">
+                     <widget class="QComboBox" name="transmitter_3"/>
+                    </item>
+                    <item row="21" column="0" rowspan="2">
+                     <widget class="QLabel" name="cart_b_l3">
+                      <property name="enabled">
+                       <bool>true</bool>
+                      </property>
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="text">
+                       <string>cart. b. file №3</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="7" column="3">
+                     <widget class="QPushButton" name="ch_user_file">
+                      <property name="enabled">
+                       <bool>true</bool>
+                      </property>
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="18" column="1" colspan="2">
+                     <widget class="QLineEdit" name="cart_b_file_1">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="13" column="0">
+                     <widget class="QLabel" name="city2_l">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="text">
+                       <string>city file №2</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="1" colspan="3">
+                     <widget class="QComboBox" name="transmitter_4"/>
+                    </item>
+                    <item row="19" column="0" rowspan="2">
+                     <widget class="QLabel" name="cart_b_l2">
+                      <property name="enabled">
+                       <bool>true</bool>
+                      </property>
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="text">
+                       <string>cart. b. file №2</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="11" column="3">
+                     <widget class="QComboBox" name="city_file_number">
+                      <item>
+                       <property name="text">
+                        <string>0</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>1</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>2</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>3</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>4</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>5</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="14" column="1" colspan="2">
+                     <widget class="QLineEdit" name="city_file_3">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="13" column="1" colspan="2">
+                     <widget class="QLineEdit" name="city_file_2">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1" colspan="3">
+                     <widget class="QComboBox" name="transmitter_1"/>
+                    </item>
+                    <item row="15" column="1" colspan="2">
+                     <widget class="QLineEdit" name="city_file_4">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="24" column="0">
+                     <widget class="QLabel" name="cart_b_l5">
+                      <property name="enabled">
+                       <bool>true</bool>
+                      </property>
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="text">
+                       <string>cart. b. file №5</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="13" column="3">
+                     <widget class="QPushButton" name="ch_city_file_2">
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="21" column="1" colspan="2">
+                     <widget class="QLineEdit" name="cart_b_file_3">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="24" column="3">
+                     <widget class="QPushButton" name="ch_cart_b_file_5">
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="10" column="0" colspan="4">
+                     <widget class="QCheckBox" name="save_temp_files">
+                      <property name="tabletTracking">
+                       <bool>false</bool>
+                      </property>
+                      <property name="focusPolicy">
+                       <enum>Qt::NoFocus</enum>
+                      </property>
+                      <property name="acceptDrops">
+                       <bool>false</bool>
+                      </property>
+                      <property name="layoutDirection">
+                       <enum>Qt::LeftToRight</enum>
+                      </property>
+                      <property name="autoFillBackground">
+                       <bool>false</bool>
+                      </property>
+                      <property name="text">
+                       <string>save gnuplot temporary working files</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="19" column="3" rowspan="2">
+                     <widget class="QPushButton" name="ch_cart_b_file_2">
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="12" column="1" colspan="2">
+                     <widget class="QLineEdit" name="city_file_1">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="23" column="0">
+                     <widget class="QLabel" name="cart_b_l4">
+                      <property name="enabled">
+                       <bool>true</bool>
+                      </property>
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="text">
+                       <string>cart. b. file №4</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="21" column="3" rowspan="2">
+                     <widget class="QPushButton" name="ch_cart_b_file_3">
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1" colspan="3">
+                     <widget class="QComboBox" name="transmitter_2"/>
+                    </item>
+                    <item row="9" column="0" colspan="4">
+                     <widget class="QCheckBox" name="metric">
+                      <property name="text">
+                       <string>in meters</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="14" column="3">
+                     <widget class="QPushButton" name="ch_city_file_3">
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="7" column="1" colspan="2">
+                     <widget class="QLineEdit" name="udt_file">
+                      <property name="enabled">
+                       <bool>true</bool>
+                      </property>
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="7" column="0">
+                     <widget class="QCheckBox" name="user_file_check">
+                      <property name="text">
+                       <string>user file</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="PtP_mode">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <attribute name="title">
+              <string>Point-to-Point mode</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <widget class="QScrollArea" name="scrollArea">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>539</width>
+                   <height>500</height>
+                  </rect>
+                 </property>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_9">
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout">
+                    <item row="7" column="0">
+                     <widget class="QLineEdit" name="graphic_file_H">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="0" colspan="2">
+                     <widget class="QCheckBox" name="h_mode">
+                      <property name="text">
+                       <string>Generate a graph illustrting terrain height referenced  to a LOS</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="9" column="0">
+                     <widget class="QLineEdit" name="graphic_file_l">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="1">
+                     <widget class="QComboBox" name="res_e">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>.png</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>.ps</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>.gif</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLineEdit" name="graphic_file_p">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="8" column="0" colspan="2">
+                     <widget class="QCheckBox" name="l_mode">
+                      <property name="text">
+                       <string>Generate a graph showing ITM path loss</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QComboBox" name="res_p">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>.png</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>.ps</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>.gif</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>.postscript</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="2" column="0" colspan="2">
+                     <widget class="QCheckBox" name="e_mode">
+                      <property name="text">
+                       <string>Generate a graph of elevations subtended by the terrain</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="9" column="1">
+                     <widget class="QComboBox" name="res_l">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>.png</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>.ps</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>.gif</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="0" column="0" colspan="2">
+                     <widget class="QCheckBox" name="p_mode">
+                      <property name="text">
+                       <string>Generate a graph of the terrain profile</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QLineEdit" name="graphic_file_e">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="0">
+                     <widget class="QLineEdit" name="graphic_file_h">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="7" column="1">
+                     <widget class="QComboBox" name="res_H">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>.png</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>.ps</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>.gif</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="6" column="0" colspan="2">
+                     <widget class="QCheckBox" name="H_mode">
+                      <property name="text">
+                       <string>A terrain height plot normalized to the -t and -r antena heights</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="1">
+                     <widget class="QComboBox" name="res_h">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>.png</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>.ps</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>.gif</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="10" column="0" colspan="2">
+                     <spacer name="verticalSpacer_2">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                      <property name="sizeType">
+                       <enum>QSizePolicy::Ignored</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>20</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_4">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="MinimumExpanding" vsizetype="Maximum">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="text">
+                     <string>-t - Transmitter, -r - Receiver</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="Area_prediction_mode">
+             <attribute name="title">
+              <string>Area prediction mode</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <widget class="QScrollArea" name="scrollArea_4">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents_4">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>539</width>
+                   <height>500</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_4">
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout_8">
+                    <item row="7" column="0" colspan="2">
+                     <widget class="QLineEdit" name="R_out">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="1">
+                     <widget class="QLabel" name="map_res">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="text">
+                       <string>.ppm</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="11" column="0" colspan="2">
+                     <widget class="QComboBox" name="ani_file_name">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0" colspan="2">
+                     <widget class="QLineEdit" name="L_out">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="0" colspan="2">
+                     <widget class="QCheckBox" name="o_mode">
+                      <property name="text">
+                       <string>Generate a topographic map </string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="0">
+                     <widget class="QLineEdit" name="map_name">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="9" column="0">
+                     <widget class="QLineEdit" name="ano_out">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="9" column="1">
+                     <widget class="QLabel" name="ano_res">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="text">
+                       <string>.dat</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0" colspan="2">
+                     <widget class="QCheckBox" name="c_mode">
+                      <property name="text">
+                       <string>Antenna height for LOS coverage analysis</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0" colspan="2">
+                     <widget class="QCheckBox" name="L_mode">
+                      <property name="text">
+                       <string>Antenna height for ITM coverage analysis</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="0" colspan="2">
+                     <widget class="QCheckBox" name="R_mode">
+                      <property name="text">
+                       <string>Maximum coverage radius</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="10" column="0" colspan="2">
+                     <widget class="QCheckBox" name="ani_file">
+                      <property name="text">
+                       <string>Alphanumeric input file</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0" colspan="2">
+                     <widget class="QLineEdit" name="c_out">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="8" column="0" colspan="2">
+                     <widget class="QCheckBox" name="ano_file">
+                      <property name="text">
+                       <string>Alphanumeric output file</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="12" column="0" colspan="2">
+                     <spacer name="verticalSpacer">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                      <property name="sizeType">
+                       <enum>QSizePolicy::Ignored</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>20</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="Options">
+             <attribute name="title">
+              <string>Options</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <widget class="QScrollArea" name="scrollArea_3">
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>525</width>
+                   <height>658</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_3">
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout_7">
+                    <item row="13" column="0" colspan="2">
+                     <widget class="QLineEdit" name="db">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="7" column="0" colspan="2">
+                     <widget class="QLineEdit" name="frequency">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="11" column="0" rowspan="2" colspan="2">
+                     <widget class="QCheckBox" name="db_mode">
+                      <property name="text">
+                       <string>threshold beyond which contours  will not be displayed</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="9" column="0" colspan="2">
+                     <widget class="QLineEdit" name="erp">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0" colspan="2">
+                     <widget class="QCheckBox" name="n_mode">
+                      <property name="text">
+                       <string>don't plot LOS path in .ppm maps</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="18" column="0" colspan="2">
+                     <widget class="QLineEdit" name="gc">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="20" column="0" colspan="2">
+                     <widget class="QCheckBox" name="dbm_mode">
+                      <property name="text">
+                       <string>plot signal  power level contours rather than field strength</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="19" column="0" colspan="2">
+                     <widget class="QCheckBox" name="ngs_mode">
+                      <property name="text">
+                       <string>display greyscale topography as white in .ppm files</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="22" column="0" colspan="2">
+                     <widget class="QCheckBox" name="oldtim">
+                      <property name="text">
+                       <string>invoke older ITM propagation model</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="8" column="0" colspan="2">
+                     <widget class="QCheckBox" name="erp_mode">
+                      <property name="text">
+                       <string>Set Effective  Radiated Power (erp) in Watts</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="0" colspan="2">
+                     <widget class="QLabel" name="label_2">
+                      <property name="text">
+                       <string>      ( between from 20 MHz and 20GHz)</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="10" column="0" colspan="2">
+                     <widget class="QCheckBox" name="sc">
+                      <property name="text">
+                       <string>display smooth rather than quantized contour levels</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="16" column="0" colspan="2">
+                     <widget class="QLineEdit" name="fz">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0" colspan="2">
+                     <widget class="QLineEdit" name="m_out">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0" colspan="2">
+                     <widget class="QCheckBox" name="m_mode">
+                      <property name="text">
+                       <string>Earth radius multiplier</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="17" column="0" colspan="2">
+                     <widget class="QCheckBox" name="gc_mode">
+                      <property name="text">
+                       <string>ground clutter height (feet/meters)</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="21" column="0" colspan="2">
+                     <widget class="QCheckBox" name="geo_mode">
+                      <property name="text">
+                       <string>generate an Xastir .geo georeferense file </string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="23" column="0" colspan="2">
+                     <widget class="QCheckBox" name="kml">
+                      <property name="text">
+                       <string>Generate kml file (for Google Earth)</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="0" colspan="2">
+                     <widget class="QCheckBox" name="frequency_mode">
+                      <property name="text">
+                       <string>frequency for Fresnel zone calculation </string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="15" column="0" colspan="2">
+                     <widget class="QCheckBox" name="fz_mode">
+                      <property name="text">
+                       <string>Fresnel zone clearance percentage (default = 60%)</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="14" column="0" colspan="2">
+                     <widget class="QCheckBox" name="nf">
+                      <property name="text">
+                       <string>don't plot Fresnel zones in height plots</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="0" colspan="2">
+                     <widget class="QCheckBox" name="N_mode">
+                      <property name="text">
+                       <string>don't produce  unnecessary site  or obstruction reports</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="layout">
+        <item>
+         <widget class="QLabel" name="Graphic_label">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Graphic files&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="view">
+          <item>
+           <widget class="QGraphicsView" name="image">
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="dragMode">
+             <enum>QGraphicsView::ScrollHandDrag</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QComboBox" name="graph_file">
+              <property name="styleSheet">
+               <string notr="true">combobox-popup: 0;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QPushButton" name="open_pic">
+              <property name="text">
+               <string>Open in external viewer</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="delete_graph_file">
+              <property name="text">
+               <string>Delete File</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QLabel" name="Terminal_label">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Terminal&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPlainTextEdit" name="terminal_out">
+          <property name="styleSheet">
+           <string notr="true">background-color: white;</string>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="2">
+           <widget class="QPushButton" name="open_txt_file">
+            <property name="text">
+             <string>Open</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="2">
+           <widget class="QComboBox" name="txt_files">
+            <property name="styleSheet">
+             <string notr="true">combobox-popup: 0;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="3">
+           <widget class="QPushButton" name="Clear_terminal">
+            <property name="text">
+             <string>Clear</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1813</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFiles">
+    <property name="title">
+     <string>Files</string>
+    </property>
+    <widget class="QMenu" name="menuCreate_file">
+     <property name="title">
+      <string>Create file</string>
+     </property>
+     <addaction name="actionqth_file"/>
+     <addaction name="action_lrp"/>
+     <addaction name="action_dat"/>
+     <addaction name="actionuser_file"/>
+    </widget>
+    <widget class="QMenu" name="menuOpen_file">
+     <property name="title">
+      <string>Open file</string>
+     </property>
+     <addaction name="actionqth"/>
+     <addaction name="action_lrp_2"/>
+     <addaction name="action_dat_2"/>
+     <addaction name="actionuser_file_2"/>
+    </widget>
+    <addaction name="separator"/>
+    <addaction name="menuCreate_file"/>
+    <addaction name="menuOpen_file"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionSettings"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout_2"/>
+   </widget>
+   <addaction name="menuFiles"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionqth_file">
+   <property name="text">
+    <string>.qth</string>
+   </property>
+  </action>
+  <action name="actionqth">
+   <property name="text">
+    <string>.qth</string>
+   </property>
+  </action>
+  <action name="action_lrp">
+   <property name="text">
+    <string>.lrp</string>
+   </property>
+  </action>
+  <action name="action_lrp_2">
+   <property name="text">
+    <string>.lrp</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="action_dat">
+   <property name="text">
+    <string>city file</string>
+   </property>
+  </action>
+  <action name="action_dat_2">
+   <property name="text">
+    <string>city file</string>
+   </property>
+  </action>
+  <action name="actionRussian">
+   <property name="text">
+    <string>Russian</string>
+   </property>
+  </action>
+  <action name="actionEnglish">
+   <property name="text">
+    <string>English</string>
+   </property>
+  </action>
+  <action name="actiongenerate_kml_file">
+   <property name="text">
+    <string>generate -kml file</string>
+   </property>
+  </action>
+  <action name="actionconvert_ppm_to_png">
+   <property name="text">
+    <string>convert .ppm to .png </string>
+   </property>
+  </action>
+  <action name="actionuser_file">
+   <property name="text">
+    <string>user file</string>
+   </property>
+  </action>
+  <action name="actionuser_file_2">
+   <property name="text">
+    <string>user file</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionAbout_2">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
