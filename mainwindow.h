@@ -1,6 +1,6 @@
 /*	
 	File                 : mainwindow.h
-    Project              : splat_GUI
+    	Project              : splat_GUI
 	-----------------------------------------------------------
 	Copyright 2022, Agafangelos Dmitriy, Vladimirov Sergey <vladimirov.opds@gmail.com>
 
